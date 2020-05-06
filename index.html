@@ -189,13 +189,13 @@ This tutorial is designed to have a minimal footprint so we made the decision to
 
 <p>The SMART app will be available at:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/
+<pre class="highlight plaintext"><code>https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/
 </code></pre>
 
 <blockquote>
 <p>Health check</p>
 </blockquote>
-<pre class="highlight plaintext"><code>https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/health
+<pre class="highlight plaintext"><code>https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/health
 </code></pre>
 
 <p>For the purposes of this tutorial we will be hosting our SMART app through <a href="https://help.github.com/articles/what-is-github-pages">GitHub Pages</a>. GitHub Pages is a convenient way to host static or client rendered web sites.</p>
@@ -204,7 +204,7 @@ This tutorial is designed to have a minimal footprint so we made the decision to
 
 <p>Use GitHub UI to directly edit <code class="prettyprint">index.html</code>. Simply switch the branch to gh-pages, navigate to <code class="prettyprint">/example-smart-app/index.html</code> and click the pencil icon. Commit your changes to deploy.</p>
 
-<p>Once the app has been redeployed go to <code class="prettyprint">https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/health</code> to ensure your app is available.</p>
+<p>Once the app has been redeployed go to <code class="prettyprint">https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/health</code> to ensure your app is available.</p>
 
 <aside class="notice">
 GitHub Pages sites have a limit of 10 builds per hour, so if your page isn&rsquo;t updating, this could be the reason.
@@ -226,11 +226,11 @@ GitHub Pages sites have a limit of 10 builds per hour, so if your page isn&rsquo
 </tr>
 <tr>
 <td>SMART Launch URI</td>
-<td><code class="prettyprint">https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html</code></td>
+<td><code class="prettyprint">https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/launch.html</code></td>
 </tr>
 <tr>
 <td>Redirect URI</td>
-<td><code class="prettyprint">https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/</code></td>
+<td><code class="prettyprint">https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/</code></td>
 </tr>
 <tr>
 <td>App Type</td>
@@ -706,8 +706,8 @@ Once these relevant files and HTML tags are included inside each view of the app
 <li>In the <strong>Patient(s)</strong> section, click the drop down button to open a list of patients in a new pop up window. Select any patient and click &#39;OK&rsquo;. This should populate the patient ID in the field.</li>
 <li>In the <strong>Provider(s)</strong> section, click the drop down button to open a list of providers. Select any provider to populate the Provider ID in the field.</li>
 <li>For the purpose of this tutorial we will leave the <strong>Advanced</strong> options as is.</li>
-<li>In the <strong>Launch</strong> section, use the following value but replace <code class="prettyprint">&lt;gh-username&gt;</code> with your GitHub username for <strong>App Launch URL</strong>:
-https://<code class="prettyprint">&lt;gh-username&gt;</code>.github.io/smart-on-fhir-tutorial/example-smart-app/launch-smart-sandbox.html</li>
+<li>In the <strong>Launch</strong> section, use the following value but replace <code class="prettyprint">ujwalacerner</code> with your GitHub username for <strong>App Launch URL</strong>:
+https://<code class="prettyprint">ujwalacerner</code>.github.io/smart-on-fhir-tutorial/example-smart-app/launch-smart-sandbox.html</li>
 <li>Note: Currently, the <a href="https://launch.smarthealthit.org">SMART App Launcher</a> does not check/validate the <code class="prettyprint">client_id</code> field. So, any value for <code class="prettyprint">client_id</code> is fine. If/when this changes, or when working with other authorization servers, please update the <code class="prettyprint">client_id</code> field in <code class="prettyprint">launch-smart-sandbox.html</code> file.</li>
 <li>Now launch the app by clicking on the green &#39;Launch App!&rsquo; button to see your app opened in the simulated EHR with the patient data.</li>
 </ul>
@@ -755,7 +755,7 @@ https://<code class="prettyprint">&lt;gh-username&gt;</code>.github.io/smart-on-
 </tr>
 <tr>
 <td>Redirect URI</td>
-<td><code class="prettyprint">https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/</code></td>
+<td><code class="prettyprint">https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/</code></td>
 </tr>
 <tr>
 <td>App Type</td>
@@ -821,12 +821,12 @@ https://<code class="prettyprint">&lt;gh-username&gt;</code>.github.io/smart-on-
 <blockquote>
 <p>Launch URL:</p>
 </blockquote>
-<pre class="highlight plaintext"><code>  https://&lt;gh-username&gt;.github.io/smart-on-fhir-tutorial/example-smart-app/launch-patient.html?iss=https://fhir-myrecord.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
+<pre class="highlight plaintext"><code>  https://ujwalacerner.github.io/smart-on-fhir-tutorial/example-smart-app/launch-patient.html?iss=https://fhir-myrecord.sandboxcerner.com/dstu2/0b8a0111-e8e6-4c26-a91c-5069cbc6b1ca
 </code></pre>
 
 <p>Since this app is a standalone app, it does not need to be launched by the EHR (code console).</p>
 
-<p>Replace <code class="prettyprint">&lt;gh-username&gt;</code> with your GitHub&rsquo;s username. Then, enter the URL above into the browser, the browser should redirect to the login page. You can use patients&rsquo; credentials listed in the first post in this <a href="https://groups.google.com/forum/#!topic/cerner-fhir-developers/edPUbVPIag0">discussion</a>.</p>
+<p>Replace <code class="prettyprint">ujwalacerner</code> with your GitHub&rsquo;s username. Then, enter the URL above into the browser, the browser should redirect to the login page. You can use patients&rsquo; credentials listed in the first post in this <a href="https://groups.google.com/forum/#!topic/cerner-fhir-developers/edPUbVPIag0">discussion</a>.</p>
 
 <p>Once you authenticated and authorized the app, the app should load with Patient and Observation data.</p>
 
